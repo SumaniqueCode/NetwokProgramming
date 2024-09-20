@@ -12,6 +12,15 @@ public class InetAddressChecker {
 			} else {
 				System.out.println("Not Equals");
 			}
+			if (addr1 instanceof java.net.Inet4Address ) {
+				System.out.println("The address is IPV4");
+			}
+			else if (addr1 instanceof java.net.Inet6Address ) {
+				System.out.println("The address is IPV6");
+			}
+			else {
+				System.out.println("Error");
+			}
 		} catch (Exception error) {
 			System.out.println(error);
 		}
