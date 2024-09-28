@@ -1,6 +1,7 @@
 package np;
 
 import java.io.IOException;
+import java.util.List;
 import java.net.HttpURLConnection;
 import java.net.URL;
 import java.util.Map;
@@ -15,7 +16,7 @@ public class HTTPHeaders {
 			connection.connect();
 
 			System.out.println("HTTP Headers:");
-			for (Map.Entry<String, java.util.List<String>> header : connection.getHeaderFields().entrySet()) {
+			for (Map.Entry<String, List<String>> header : connection.getHeaderFields().entrySet()) {
 				System.out.println(header.getKey() + ": " + header.getValue());
 			}
 
