@@ -20,7 +20,7 @@ public class SocketInformation {
 			} else {
 				System.out.println("Socket is open");
 			}
-			System.out.println("Socket to string(): " + socket.toString());
+			System.out.println("Socket to string: " + socket.toString());
 			System.out.println("Local Address: " + socket.getLocalAddress());
 			System.out.println("Local Port: " + socket.getLocalPort());
 			System.out.println("Remote Address: " + socket.getInetAddress());
