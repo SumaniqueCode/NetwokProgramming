@@ -22,9 +22,7 @@ public class GetMethod {
 			System.out.println("GET Response Code :: " + responseCode);
 // If response code is 200 (HTTP_OK), read and print the response
 			if (responseCode == HttpURLConnection.HTTP_OK) {
-				BufferedReader in = new BufferedReader(
-						new InputStreamReader(con.getInputStream())
-						);
+				BufferedReader in = new BufferedReader(new InputStreamReader(con.getInputStream()));
 				String inputLine;
 				StringBuilder response = new StringBuilder();
 				while ((inputLine = in.readLine()) != null) {
